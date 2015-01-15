@@ -94,19 +94,50 @@
 					</div>
 				</div>
 			</div>
+			<div class="index-btn-left"><i class="icon-chevron-left"></i></div>
+			<div class="index-btn-right"><i class="icon-chevron-right"></i></div>
 		</div>
 		<script type="text/javascript">
 			$(function(){
-				var i = 0;
-				var timer = null;
-				timer = setInterval(function(){
-					i++;
-					$('.index-panel-box').find('.index-panel').eq(0).animate({
-						marginLeft : '-25%'
-					},1000,function(){
-						$('.index-panel-box').append($('.index-panel-box').find('.index-panel').eq(0).css('marginLeft', '0'));
-					});
-				},4000);
+				var _length = $('.index-panel-box').find('.index-panel').length;
+				var _width = (document.body.clientWidth - 45) / 4;
+				$('.index-panel').css('width', _width + 'px');
+				$('.index-panel-box').css('width', _width * 6 + 'px');
+				var leftFlag = true;
+				var rightFlag = true;
+				$('.index-btn-left').click(function(){
+					if(leftFlag){
+						$('.index-panel-box').prepend($('.index-panel-box').find('.index-panel').eq(_length - 1).css('marginLeft', '-' + _width + 'px'));
+						leftFlag = false;
+						$('.index-panel-box').find('.index-panel').eq(0).stop().animate({
+							marginLeft : 0
+						},800,function(){
+							leftFlag = true;
+						});
+					}
+				});
+				$('.index-btn-right').click(function(){
+					if(rightFlag){
+						rightFlag = false;
+						$('.index-panel-box').find('.index-panel').eq(0).stop().animate({
+							marginLeft : '-' + _width + 'px'
+						},800,function(){
+							$('.index-panel-box').append($('.index-panel-box').find('.index-panel').eq(0).css('marginLeft', '0'));
+							rightFlag = true;
+						});
+					}
+					
+				});
+				// var i = 0;
+				// var timer = null;
+				// timer = setInterval(function(){
+				// 	i++;
+				// 	$('.index-panel-box').find('.index-panel').eq(0).animate({
+				// 		marginLeft : '-25%'
+				// 	},2000,function(){
+				// 		$('.index-panel-box').append($('.index-panel-box').find('.index-panel').eq(0).css('marginLeft', '0'));
+				// 	});
+				// },4000);
 			});
 		</script>
 	</body>

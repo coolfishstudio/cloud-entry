@@ -45,7 +45,7 @@ a{text-decoration: none;color:#666;}
 .right-content .index-panel#website{left: 150%;background-image: url("http://photos.tuchong.com/42889/f/23003660.jpg");}
 */
 .right-content .index-panel-box{overflow: hidden;height:100%;width:1800px;}
-.right-content .index-panel-box .index-panel{float: left;width: 300px;height: 100%;position: relative;background-position: center;background-size: cover;}
+.right-content .index-panel-box .index-panel{float: left;min-width: 300px;height: 100%;position: relative;background-position: center;background-size: cover;}
 
 .right-content .index-panel#blog{background-image: url("http://photos.tuchong.com/370762/f/7571103.jpg");}
 .right-content .index-panel#forum{background-image: url("http://photos.tuchong.com/370762/f/20709549.jpg");}
@@ -67,4 +67,9 @@ a{text-decoration: none;color:#666;}
 .index-panel .bottom-block h6{line-height: 20px;font-size: 12px;}
 .index-panel .bottom-block a{margin-top: 10px;font-size: 16px;color: #fff;background: #49be38;padding: 11px 19px;border-radius: 4px;}
 .index-panel .bottom-block a:hover{background: #62c462;}
+
+.right-content .index-btn-left{position: absolute;top:50%;padding: 20px 5px;color: rgba(0,0,0,0.35);font-size: 48px;margin-top: -45px;left: 60px;cursor: pointer;}
+.right-content .index-btn-right{position: absolute;top:50%;padding: 20px 5px;color: rgba(0,0,0,0.35);font-size: 48px;margin-top: -45px;right:15px;cursor: pointer;}
+.right-content .index-btn-left:hover,.right-content .index-btn-right:hover{color: rgba(0,0,0,0.75);}
+
 
