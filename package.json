@@ -1,11 +1,19 @@
 {
-  "name": "demo",
+  "name": "cloud-entry",
   "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "node ./bin/www"
   },
   "main": "./bin/www",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:coolfishstudio/cloud-entry.git"
+  },
+  "author": {
+    "name": "coolfishstudio",
+    "email": "461836324@qq.com"
+  },
   "dependencies": {
     "express": "~4.2.0",
     "static-favicon": "~1.0.0",
