@@ -42,10 +42,10 @@ a{text-decoration: none;color:#666;}
 .right-content .index-panel#game{left: 75%;background-image: url("http://photos.tuchong.com/370762/f/6912605.jpg")}
 
 .index-panel .cover-bg{width: 100%;height: 100%;-webkit-box-shadow: -3px 0px 10px rgba(0,0,0,0.5) inset;-moz-box-shadow: -3px 0px 10px rgba(0,0,0,0.5) inset;box-shadow: -3px 0px 10px rgba(0,0,0,0.5) inset;}
-.index-panel .cover-mask{position: absolute;width: 100%;height: 100%;background: rgba(255,255,255,0.35);top: 0;left: 0;}
+.index-panel .cover-mask{position: absolute;width: 100%;height: 100%;background: rgba(255,255,255,0.5);top: 0;left: 0;transition: .4s;}
 .index-panel:hover .cover-mask{background: rgba(255,255,255,0);}
-.index-panel .cover-msg{padding: 6px 20px;position: absolute;top: 30%;left: 50%;font-size: 40px;border: 5px #CC3333 dashed;border-radius: 5px;margin-left: -105px;color:#CC3333;-webkit-transform: rotate(30deg);transform: rotate(30deg);}
-
+.index-panel .cover-msg{padding: 6px 20px;position: absolute;top: 30%;left: 50%;font-size: 40px;border-radius: 18px;margin-left: -105px;border: 5px #CC3333 dashed;color:#CC3333;-webkit-transform: rotate(30deg);transform: rotate(30deg);transition: .4s;}
+.index-panel:hover .cover-msg{border: 5px rgba(204,51,51,0.35) dashed;color:rgba(204,51,51,0.35);}
 .index-panel .bottom-block{position: absolute;bottom: 0;padding: 30px;color: #fff;}
 .index-panel .bottom-block h1,h3,h6{text-shadow: -1px 0 0 rgba(0,0,0,0.75);margin: 10px 0;}
 .index-panel .bottom-block h1{line-height: 40px;font-size: 40px;}
@@ -53,8 +53,4 @@ a{text-decoration: none;color:#666;}
 .index-panel .bottom-block h6{line-height: 20px;font-size: 12px;}
 .index-panel .bottom-block a{margin-top: 10px;font-size: 16px;color: #fff;background: #49be38;padding: 11px 19px;border-radius: 4px;}
 .index-panel .bottom-block a:hover{background: #62c462;}
-
-/* 用户信息的左侧面板 */
-
-
 
