@@ -32,7 +32,7 @@ a{text-decoration: none;color:#666;}
 .left-bar .bottom-menu li a{display: block;font-size: 16px;padding: 10px;height: 16px;position: relative;color: #999;transition:.4s all ease;}
 .left-bar .bottom-menu li:hover a{color: #fff;}
 /* 右侧内容面板 */
-.right-content{margin-left: 45px;min-height: 600px;overflow: hidden;background-color:#F7F6F2;height: 100%;}
+.right-content{margin-left: 45px;min-height: 450px;overflow: hidden;background-color:#F7F6F2;height: 100%;}
 /* 首页左侧面板 */
 .right-content .index-panel-box{width: 100%;height: 100%;position: relative;}
 .right-content .index-panel-box .index-panel{width: 25%;height: 100%;position: absolute;z-index: 888;margin: 0;background-position: center;background-size: cover;}
