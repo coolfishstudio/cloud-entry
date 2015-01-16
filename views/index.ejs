@@ -99,12 +99,12 @@
 		</div>
 		<script type="text/javascript">
 			$(function(){
-				var _length = $('.index-panel-box').find('.index-panel').length;
-				var _width = (document.body.clientWidth - 45) / 4;
-				$('.index-panel').css('width', _width + 'px');
-				$('.index-panel-box').css('width', _width * 6 + 'px');
+				var mobileBrowser= /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 				var leftFlag = true;
 				var rightFlag = true;
+				var _length = $('.index-panel-box').find('.index-panel').length;
+				var _width = 0;
+				init();
 				$('.index-btn-left').click(function(){
 					if(leftFlag){
 						$('.index-panel-box').prepend($('.index-panel-box').find('.index-panel').eq(_length - 1).css('marginLeft', '-' + _width + 'px'));
@@ -128,16 +128,17 @@
 					}
 					
 				});
-				// var i = 0;
-				// var timer = null;
-				// timer = setInterval(function(){
-				// 	i++;
-				// 	$('.index-panel-box').find('.index-panel').eq(0).animate({
-				// 		marginLeft : '-25%'
-				// 	},2000,function(){
-				// 		$('.index-panel-box').append($('.index-panel-box').find('.index-panel').eq(0).css('marginLeft', '0'));
-				// 	});
-				// },4000);
+				function init(){
+					if(!mobileBrowser){
+						_width = (document.body.clientWidth - 45) / 4;
+						$('.index-panel').css('width', _width + 'px');
+						$('.index-panel-box').css('width', _width * 6 + 'px');
+					}else{
+						_width = document.body.clientWidth - 45;
+						$('.index-panel').css('width', _width + 'px');
+						$('.index-panel-box').css('width', _width * 6 + 'px');
+					}
+				}
 			});
 		</script>
 	</body>
