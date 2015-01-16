@@ -49,11 +49,9 @@ a{text-decoration: none;color:#666;}
 
 .right-content .index-panel#blog{background-image: url("http://photos.tuchong.com/370762/f/7571103.jpg");}
 .right-content .index-panel#forum{background-image: url("http://photos.tuchong.com/370762/f/20709549.jpg");}
-.right-content .index-panel#animate{background-image: url("http://photos.tuchong.com/42889/f/23003661.jpg");}
 .right-content .index-panel#application{background-image: url("http://photos.tuchong.com/370762/f/7162471.jpg");}
 .right-content .index-panel#game{background-image: url("http://photos.tuchong.com/370762/f/6912605.jpg");}
 .right-content .index-panel#opus{background-image: url("http://photos.tuchong.com/107570/f/15532487.jpg");}
-.right-content .index-panel#website{background-image: url("http://photos.tuchong.com/42889/f/23003660.jpg");}
 
 .index-panel .cover-bg{width: 100%;height: 100%;-webkit-box-shadow: -3px 0px 10px rgba(0,0,0,0.5) inset;-moz-box-shadow: -3px 0px 10px rgba(0,0,0,0.5) inset;box-shadow: -3px 0px 10px rgba(0,0,0,0.5) inset;}
 .index-panel .cover-mask{position: absolute;width: 100%;height: 100%;background: rgba(255,255,255,0.5);top: 0;left: 0;transition: .4s;}
@@ -68,8 +66,8 @@ a{text-decoration: none;color:#666;}
 .index-panel .bottom-block a{margin-top: 10px;font-size: 16px;color: #fff;background: #49be38;padding: 11px 19px;border-radius: 4px;}
 .index-panel .bottom-block a:hover{background: #62c462;}
 
-.right-content .index-btn-left{position: absolute;top:50%;padding: 20px 5px;color: rgba(0,0,0,0.35);font-size: 48px;margin-top: -45px;left: 60px;cursor: pointer;}
-.right-content .index-btn-right{position: absolute;top:50%;padding: 20px 5px;color: rgba(0,0,0,0.35);font-size: 48px;margin-top: -45px;right:15px;cursor: pointer;}
+.right-content .index-btn-left{height: 49px;display: none;position: absolute;top:50%;padding: 20px 5px;color: rgba(0,0,0,0.35);font-size: 48px;margin-top: -45px;left: 60px;cursor: pointer;}
+.right-content .index-btn-right{height: 49px;display: none;position: absolute;top:50%;padding: 20px 5px;color: rgba(0,0,0,0.35);font-size: 48px;margin-top: -45px;right:15px;cursor: pointer;}
 .right-content .index-btn-left:hover,.right-content .index-btn-right:hover{color: rgba(0,0,0,0.75);}
 
 
