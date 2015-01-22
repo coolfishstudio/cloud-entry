@@ -26,7 +26,7 @@
 	  	</div><!-- leftBar end -->
 	  	<div class="right-content"><!-- rightContent -->
 	  		<div class="index-panel-box">
-		 		<div class="index-panel" id="blog">
+		 		<div class="left-panel" id="blog">
 					<div class="cover-bg"></div>
 					<div class="cover-mask"></div>
 					<div class="cover-msg">敬请期待</div>
@@ -38,7 +38,7 @@
 					    <a class="btn" href="###">前往酷鱼博客</a>
 					</div>
 				</div>
-				<div class="index-panel" id="forum">
+				<div class="left-panel" id="forum">
 					<div class="cover-bg"></div>
 					<div class="cover-mask"></div>
 					<div class="cover-msg">敬请期待</div>
@@ -49,7 +49,7 @@
 					    <a class="btn" href="###">前往酷鱼论坛</a>
 					</div>
 				</div>
-				<div class="index-panel" id="application">
+				<div class="left-panel" id="application">
 					<div class="cover-bg"></div>
 					<div class="cover-mask"></div>
 					<!-- <div class="cover-msg">敬请期待</div> -->
@@ -60,7 +60,7 @@
 						<a class="btn" href="http://animate.coolfishstudio.com/">前往酷鱼应用</a>
 					</div>
 				</div>
-<!-- 				<div class="index-panel" id="game">
+<!-- 				<div class="left-panel" id="game">
 					<div class="cover-bg"></div>
 					<div class="cover-mask"></div>
 					<div class="cover-msg">敬请期待</div>
@@ -71,7 +71,7 @@
 					    <a class="btn" href="###">前往酷鱼游戏</a>
 					</div>
 				</div> -->
-				<div class="index-panel" id="opus">
+				<div class="left-panel" id="opus">
 					<div class="cover-bg"></div>
 					<div class="cover-mask"></div>
 					<!-- <div class="cover-msg">敬请期待</div> -->
@@ -91,14 +91,14 @@
 				var mobileBrowser= /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 				var leftFlag = true;
 				var rightFlag = true;
-				var _length = $('.index-panel-box').find('.index-panel').length;
+				var _length = $('.index-panel-box').find('.left-panel').length;
 				var _width = 0;
 				init();
 				$('.index-btn-left').click(function(){
 					if(leftFlag){
-						$('.index-panel-box').prepend($('.index-panel-box').find('.index-panel').eq(_length - 1).css('marginLeft', '-' + _width + 'px'));
+						$('.index-panel-box').prepend($('.index-panel-box').find('.left-panel').eq(_length - 1).css('marginLeft', '-' + _width + 'px'));
 						leftFlag = false;
-						$('.index-panel-box').find('.index-panel').eq(0).stop().animate({
+						$('.index-panel-box').find('.left-panel').eq(0).stop().animate({
 							marginLeft : 0
 						},800,function(){
 							leftFlag = true;
@@ -108,10 +108,10 @@
 				$('.index-btn-right').click(function(){
 					if(rightFlag){
 						rightFlag = false;
-						$('.index-panel-box').find('.index-panel').eq(0).stop().animate({
+						$('.index-panel-box').find('.left-panel').eq(0).stop().animate({
 							marginLeft : '-' + _width + 'px'
 						},800,function(){
-							$('.index-panel-box').append($('.index-panel-box').find('.index-panel').eq(0).css('marginLeft', '0'));
+							$('.index-panel-box').append($('.index-panel-box').find('.left-panel').eq(0).css('marginLeft', '0'));
 							rightFlag = true;
 						});
 					}
@@ -120,11 +120,11 @@
 				function init(){
 					if(!mobileBrowser){
 						_width = (document.body.clientWidth - 45) / 4;
-						$('.index-panel').css('width', _width + 'px');
+						$('.left-panel').css('width', _width + 'px');
 						$('.index-panel-box').css('width', _width * _length + 'px');
 					}else{
 						_width = document.body.clientWidth - 45;
-						$('.index-panel').css('width', _width + 'px');
+						$('.left-panel').css('width', _width + 'px');
 						$('.index-panel-box').css('width', _width * _length + 'px');
 						$('.index-btn-left').show();
 						$('.index-btn-right').show();
