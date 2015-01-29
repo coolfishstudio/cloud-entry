@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <title>酷鱼网 | 应用首页</title>
+        <link rel='stylesheet' type="text/css" href='/css/app.css' />
+        <link rel='stylesheet' type="text/css" href='/css/font-awesome.min.css' />
+        <script type="text/javascript" src="/js/jquery.js"></script>
+    </head>
+    <body>
+        <div class="left-bar"><!-- leftBar -->
+            <ul class="left-menu">
+                <li class="active"><a href="http://www.coolfishstudio.com/">酷</a><span>首页</span></li>
+                <li><a href="###">博</a><span>博客</span></li>
+                <li><a href="###">论</a><span>论坛</span></li>
+                <li><a href="/app">应</a><span>应用</span></li>
+                <li><a href="/game">游</a><span>游戏</span></li>
+            </ul>
+            <ul class="bottom-menu">
+                <li><a href="###"><i class="icon-question-sign"></i></a></li>
+                <li><a href="###"><i class="icon-font"></i></a></li>
+                <li><a href="###"><i class="icon-signin"></i></a></li>
+            </ul>
+        </div><!-- leftBar end -->
+        <div class="right-content"><!-- rightContent -->
+        <div class="left-panel">
+            <div class="cover-img randomMove" style="background-image: url(http://photos.tuchong.com/370762/f/7162471.jpg)"></div>
+            <div class="cover-shadow"></div>
+            <div class="bottom-block">
+                <h1>应用</h1>
+                <h3>灵活组件，前沿技术</h3>
+                <h6>在这里更好的生活。</h6> 
+            </div>
+        </div>
+        <div class="index-panel-box">
+            <div class="index-panel-title">
+                <ul class="index-panel-title-box">
+                    <li class="active">
+                        <a href="javascript:;">酷鱼应用</a>
+                    </li>
+                </ul>
+                
+            </div>
+            <div class="index-panel-content">
+                <ul class="sort-nav">
+                    <li class="active">
+                        <a href="javascript:;">WEB应用</a>
+                    </li>
+                    <li class="">
+                        <a href="javascript:;">APP应用</a>
+                    </li>
+                </ul>
+                <ul class="app-panel-box">
+                    <li class="app-panel-border">
+                        <div class="app-panel">
+                            <a href="http://animate.coolfishstudio.com" target="_blank">
+                                <div class="app-panel-img">
+                                    <img src="/images/app/ydysk.png">
+                                </div>
+                                <div class="app-panel-content">
+                                    <span>CFS.ANIMATE.CSS</span>
+                                    <ul>
+                                        <li class="border-first"><p>CSS3版本运动样式库</p></li>
+                                        <li class="border-last"><p><i class="icon-trophy"></i> 0</p><p><i class="icon-calendar"></i> 2015/01/06</p></li>
+                                    </ul>
+                                </div>
+                                <div class="app-panel-bg">
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    
+
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- <div class="index-page-box">
+            <a class="next" href="javascript:;"><i>点击查看更多</i></a>
+        </div> -->
+    </div><!-- rightCont end -->
+    <script type="text/javascript">
+    $(function(){
+        /* 处理用户操作事件 */
+        $('.dropdown-toggle').click(function(){
+            if($('.dropdown-menu').css('display') == 'none'){
+                $('.dropdown-menu').css('display','block');
+            }else{
+                $('.dropdown-menu').css('display','none');
+            }
+        });
+        $('.dropdown-menu').hover(function(){
+            $('.dropdown-menu').css('display','block');
+        },function(){
+            setTimeout(function(){
+                $('.dropdown-menu').css('display','none');
+            },500);
+        });
+    });
+    </script>   
+    </body>
+</html>
