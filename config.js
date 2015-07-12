@@ -4,7 +4,7 @@ module.exports = {
 	// 程序运行的端口
 	LISTEN_PORT: process.env.PORT || 9200,
 	// 网站名字
-	NAME: 'IT酷鱼网',
+	NAME: '酷鱼网',
 	// 负责人
 	ADMIN: {
 		name: 'Yves',
